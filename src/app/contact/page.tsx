@@ -37,9 +37,9 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen pt-28 pb-safe-bottom bg-[#F7FAFC]">
+    <main className="min-h-screen bg-[#F7FAFC]">
       {/* Header */}
-      <section className="bg-[#061331] text-white py-14 border-b border-slate-800">
+      <section className="bg-[#061331] text-white pt-28 py-16 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-blue-950 px-3.5 py-1.5 rounded-full border border-blue-800">
             Direct Service Enquiry

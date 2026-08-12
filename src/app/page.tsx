@@ -13,7 +13,7 @@ import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen pb-safe-bottom">
+    <main className="min-h-screen">
       <HeroSection />
       <TrustStrip />
       <ServicesSection />

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen pt-28 pb-safe-bottom bg-white">
+    <main className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-[#061331] text-white py-16 border-b border-slate-800">
+      <section className="bg-[#061331] text-white py-16 border-b border-slate-800 pt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-blue-950 px-3.5 py-1.5 rounded-full border border-blue-800">
             Meet The Master Technician

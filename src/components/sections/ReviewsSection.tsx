@@ -62,10 +62,9 @@ export function ReviewsSection() {
                 </a>
 
                 <WhatsAppButton
-                  variant="secondary"
                   message={PREFILLED_MESSAGES.general}
                   source="reviews-cta"
-                  className="w-full sm:w-auto text-sm py-4 px-7 bg-slate-100 hover:bg-slate-200 text-slate-900 border-slate-300"
+                  className="w-full sm:w-auto text-sm py-4 px-7 bg-black hover:bg-slate-200 text-slate-900 border-slate-300"
                 >
                   WhatsApp Service Enquiry
                 </WhatsAppButton>

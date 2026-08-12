@@ -59,7 +59,7 @@ export function HeroSection() {
                   message={PREFILLED_MESSAGES.hero}
                   source="hero-main"
                   showPulse
-                  className="w-full sm:w-auto text-base py-4 px-7 shadow-xl shadow-emerald-900/40"
+                  className="w-full sm:w-auto text-base py-4 px-5 shadow-xl shadow-emerald-900/40"
                 >
                   WhatsApp for Service
                 </WhatsAppButton>
@@ -67,7 +67,7 @@ export function HeroSection() {
                 <CallButton
                   variant="secondary"
                   source="hero-main"
-                  className="w-full sm:w-auto text-base py-4 px-6 bg-slate-800/90 hover:bg-slate-800 text-white border-slate-700"
+                  className="w-full sm:w-auto text-base py-4 px-5 bg-slate-800/90 hover:bg-slate-800 text-white border-slate-700"
                 >
                   Call {BUSINESS_INFO.phone}
                 </CallButton>
