@@ -1,26 +1,116 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --navy-primary: #071A45;
+    --navy-dark: #061331;
+    --blue-primary: #145FE8;
+    --blue-bright: #1683FF;
+    --cyan-accent: #19BFF2;
+    --bg-light: #F7FAFC;
+    --text-main: #0B1B3A;
+    --text-muted: #64748B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+    font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Utilities for Navy & Cooling Motifs */
+.bg-navy-primary {
+  background-color: #071A45;
+}
+
+.bg-navy-dark {
+  background-color: #061331;
+}
+
+.bg-blue-primary {
+  background-color: #145FE8;
+}
+
+.bg-blue-bright {
+  background-color: #1683FF;
+}
+
+.text-navy-primary {
+  color: #071A45;
+}
+
+.text-navy-dark {
+  color: #061331;
+}
+
+.text-blue-primary {
+  color: #145FE8;
+}
+
+.text-blue-bright {
+  color: #1683FF;
+}
+
+.text-cyan-accent {
+  color: #19BFF2;
+}
+
+.border-navy-light {
+  border-color: rgba(7, 26, 69, 0.12);
+}
+
+.border-blue-accent {
+  border-color: rgba(20, 95, 232, 0.3);
+}
+
+/* Ambient Subtle Cooling Grid Pattern */
+.cooling-grid-pattern {
+  background-image: radial-gradient(rgba(25, 191, 242, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glass & Hero Card Effects */
+.navy-card-glow {
+  box-shadow: 0 20px 40px -15px rgba(6, 19, 49, 0.35);
+}
+
+.glass-nav {
+  background-color: rgba(6, 19, 49, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(20, 95, 232, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #061331;
+}
+::-webkit-scrollbar-thumb {
+  background: #145FE8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #19BFF2;
+}
+
+/* Safe area padding for mobile sticky bar */
+.pb-safe-bottom {
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
 }
