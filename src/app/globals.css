@@ -27,72 +27,66 @@
   }
 }
 
-/* Custom Utilities for Navy & Cooling Motifs */
-.bg-navy-primary {
-  background-color: #071A45;
+/* Ambient Radial Aura Glows */
+.aura-cyan {
+  background: radial-gradient(circle, rgba(25, 191, 242, 0.18) 0%, rgba(20, 95, 232, 0.05) 50%, transparent 70%);
 }
 
-.bg-navy-dark {
-  background-color: #061331;
+.aura-blue {
+  background: radial-gradient(circle, rgba(20, 95, 232, 0.22) 0%, rgba(6, 19, 49, 0.1) 60%, transparent 80%);
 }
 
-.bg-blue-primary {
-  background-color: #145FE8;
+/* Glowing Borders & Glass Effects */
+.glow-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(20, 95, 232, 0.12);
+  box-shadow: 0 10px 30px -10px rgba(7, 26, 69, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.bg-blue-bright {
-  background-color: #1683FF;
+.glow-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(25, 191, 242, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(20, 95, 232, 0.15);
 }
 
-.text-navy-primary {
-  color: #071A45;
+.dark-glow-card {
+  background: rgba(6, 19, 49, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(25, 191, 242, 0.18);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.text-navy-dark {
-  color: #061331;
+.dark-glow-card:hover {
+  border-color: rgba(25, 191, 242, 0.5);
+  box-shadow: 0 25px 50px -12px rgba(25, 191, 242, 0.2);
 }
 
-.text-blue-primary {
-  color: #145FE8;
+.glass-nav-modern {
+  background-color: rgba(6, 19, 49, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(25, 191, 242, 0.15);
 }
 
-.text-blue-bright {
-  color: #1683FF;
+/* Custom Gradient Text */
+.gradient-text-cyan {
+  background: linear-gradient(135deg, #FFFFFF 0%, #19BFF2 60%, #1683FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.text-cyan-accent {
-  color: #19BFF2;
-}
-
-.border-navy-light {
-  border-color: rgba(7, 26, 69, 0.12);
-}
-
-.border-blue-accent {
-  border-color: rgba(20, 95, 232, 0.3);
+.gradient-text-blue {
+  background: linear-gradient(135deg, #071A45 0%, #145FE8 60%, #1683FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Ambient Subtle Cooling Grid Pattern */
 .cooling-grid-pattern {
-  background-image: radial-gradient(rgba(25, 191, 242, 0.15) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-/* Glass & Hero Card Effects */
-.navy-card-glow {
-  box-shadow: 0 20px 40px -15px rgba(6, 19, 49, 0.35);
-}
-
-.glass-nav {
-  background-color: rgba(6, 19, 49, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.glass-card-light {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(20, 95, 232, 0.1);
+  background-image: radial-gradient(rgba(25, 191, 242, 0.12) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
 }
 
 /* Custom Scrollbar */
