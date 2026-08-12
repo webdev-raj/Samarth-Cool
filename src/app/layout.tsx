@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${SITE_METADATA.siteUrl}/images/pravin-chavan.png`,
+        url: `${SITE_METADATA.siteUrl}/images/pravin-chavan.jpeg`,
         width: 1200,
         height: 630,
         alt: "Samarth Cool AC & Refrigeration Service Pravin Chavan",

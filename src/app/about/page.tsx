@@ -38,7 +38,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5">
               <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 bg-slate-900">
                 <Image
-                  src="/images/pravin-chavan.png"
+                  src="/images/pravin-chavan.jpeg"
                   alt="Pravin Chavan Founder Samarth Cool"
                   fill
                   sizes="(max-width: 768px) 100vw, 450px"

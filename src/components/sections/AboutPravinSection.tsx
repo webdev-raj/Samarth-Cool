@@ -17,7 +17,7 @@ export function AboutPravinSection() {
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 glow-card">
                   <Image
-                    src="/images/pravin-chavan.png"
+                    src="/images/pravin-chavan.jpeg"
                     alt="Pravin Chavan - Founder & Senior AC Technician"
                     fill
                     sizes="(max-width: 768px) 100vw, 450px"

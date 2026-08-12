@@ -135,7 +135,7 @@ export function HeroSection() {
                 <div className="relative rounded-3xl overflow-hidden p-2 dark-glow-card">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                     <Image
-                      src="/images/pravin-chavan.png"
+                      src="/images/pravin-chavan.jpeg"
                       alt="Pravin Chavan - Senior AC & Refrigeration Specialist"
                       fill
                       sizes="(max-width: 768px) 100vw, 500px"

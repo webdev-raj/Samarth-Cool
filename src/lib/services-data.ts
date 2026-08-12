@@ -275,6 +275,6 @@ export const WORK_SAMPLES = [
     category: "Diagnosis & AMC",
     location: "Andheri West, Mumbai",
     tag: "Commercial",
-    image: "/images/pravin-chavan.png",
+    image: "/images/pravin-chavan.jpeg",
   },
 ];
