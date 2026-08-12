@@ -34,19 +34,26 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
             ? "glass-nav-modern py-3 shadow-2xl"
             : "bg-[#061331]/95 backdrop-blur-md py-4 border-b border-slate-800/60"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="relative w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-blue-500 to-cyan-400 p-0.5 shadow-lg group-hover:shadow-cyan-400/40 group-hover:scale-105 transition-all duration-300">
-                <div className="w-full h-full bg-[#061331] rounded-[10px] flex items-center justify-center">
-                  <Snowflake className="w-5 h-5 text-cyan-400 stroke-[2.5] group-hover:rotate-180 transition-transform duration-700" />
+              <div className="relative w-12 h-12 rounded-xl p-0.5 shadow-lg group-hover:scale-105 transition-all duration-300">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img
+                    src="/images/logo.png"
+                    alt="Samarth Cool Logo"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain'
+                    }}
+                  />
                 </div>
               </div>
 
@@ -68,9 +75,8 @@ export function Header() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`relative text-sm font-semibold transition-colors duration-200 py-1 ${
-                      isActive ? "text-cyan-400 font-bold" : "text-slate-300 hover:text-white"
-                    }`}
+                    className={`relative text-sm font-semibold transition-colors duration-200 py-1 ${isActive ? "text-cyan-400 font-bold" : "text-slate-300 hover:text-white"
+                      }`}
                   >
                     {link.name}
                     {isActive && (

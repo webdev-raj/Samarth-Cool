@@ -33,9 +33,17 @@ export function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 p-0.5 shadow-md">
-                <div className="w-full h-full bg-[#061331] rounded-[10px] flex items-center justify-center">
-                  <Snowflake className="w-5 h-5 text-cyan-400 stroke-[2.5]" />
+              <div className="relative w-12 h-12 rounded-xl p-0.5 shadow-lg group-hover:scale-105 transition-all duration-300">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img
+                    src="/images/logo.png"
+                    alt="Samarth Cool Logo"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain'
+                    }}
+                  />
                 </div>
               </div>
 
